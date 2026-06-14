@@ -8,23 +8,23 @@ Show your work clearly. Write answers using function notation whenever possible.
 
 1. Decide whether each relation is a function.
 
-   a. `{(1, 4), (2, 5), (3, 6)}`
+   a. $\{(1, 4), (2, 5), (3, 6)\}$
 
-   b. `{(0, 2), (0, 3), (1, 5)}`
+   b. $\{(0, 2), (0, 3), (1, 5)\}$
 
-   c. `-2 -> 1, 0 -> 1, 3 -> 4`
+   c. $-2 \to 1,\ 0 \to 1,\ 3 \to 4$
 
 2. For the function given by
 
-```text
-{(1, 3), (2, 6), (4, 12), (5, 15)}
-```
+$$
+\{(1, 3), (2, 6), (4, 12), (5, 15)\}
+$$
 
 find:
 
-- `f(1)`
-- `f(4)`
-- the output when the input is `5`
+- $f(1)$
+- $f(4)$
+- the output when the input is $5$
 
 3. A function maps each student ID number to exactly one student name. Explain why this relation is a function.
 
@@ -40,9 +40,9 @@ find:
 | 2 | 4 |
 | 4 | 16 |
 
-- What is `f(-1)`?
-- What is `f(2)`?
-- Which input gives output `16`?
+- What is $f(-1)$?
+- What is $f(2)$?
+- Which input gives output $16$?
 - Do two different inputs ever give the same output in this table?
 
 5. Write a possible rule that matches the table in Problem 4.
@@ -51,60 +51,69 @@ find:
 
 6. Let:
 
-```text
+$$
 f(x) = 3x + 2
+$$
+
+$$
 g(x) = x - 5
-```
+$$
 
 Find:
 
-- `(f o g)(x)`
-- `(g o f)(x)`
+- $(f \circ g)(x)$
+- $(g \circ f)(x)$
 
 7. Let:
 
-```text
+$$
 f(x) = x^2
-g(x) = 2x + 1
-```
+$$
 
-Find `(f o g)(2)` and `(g o f)(2)`.
+$$
+g(x) = 2x + 1
+$$
+
+Find $(f \circ g)(2)$ and $(g \circ f)(2)$.
 
 8. Suppose the raw mappings are:
 
-```text
-g: 1 -> 2, 2 -> 3, 3 -> 1
-f: 1 -> 4, 2 -> 5, 3 -> 6
-```
+$$
+g: 1 \to 2,\quad 2 \to 3,\quad 3 \to 1
+$$
+
+$$
+f: 1 \to 4,\quad 2 \to 5,\quad 3 \to 6
+$$
 
 Find:
 
-- `g(3)`
-- `f(2)`
-- `(f o g)(1)`
-- `(f o g)(3)`
+- $g(3)$
+- $f(2)$
+- $(f \circ g)(1)$
+- $(f \circ g)(3)$
 
 ## Part D: Inverse Function
 
 9. Find the inverse of:
 
-```text
+$$
 f(x) = 2x - 7
-```
+$$
 
-10. Check your answer to Problem 9 by showing that `f(f^(-1)(x)) = x`.
+10. Check your answer to Problem 9 by showing that $f(f^{-1}(x)) = x$.
 
-11. Explain why `f(x) = x^2` does not have an inverse on all real numbers.
+11. Explain why $f(x) = x^2$ does not have an inverse on all real numbers.
 
-12. State a restriction on the domain of `f(x) = x^2` that allows an inverse to exist.
+12. State a restriction on the domain of $f(x) = x^2$ that allows an inverse to exist.
 
 ## Part E: Function Graphs
 
-13. Make a table of values for `f(x) = x + 2` using `x = -2, -1, 0, 1, 2`.
+13. Make a table of values for $f(x) = x + 2$ using $x = -2, -1, 0, 1, 2$.
 
-14. Make a table of values for `f(x) = x^2` using `x = -2, -1, 0, 1, 2`.
+14. Make a table of values for $f(x) = x^2$ using $x = -2, -1, 0, 1, 2$.
 
-15. Which graph is a straight line: `f(x) = x + 2` or `f(x) = x^2`?
+15. Which graph is a straight line: $f(x) = x + 2$ or $f(x) = x^2$?
 
 16. Which test tells whether a graph represents a function?
 
@@ -112,14 +121,23 @@ f(x) = 2x - 7
 
 ## Challenge
 
-18. A function `h` satisfies:
+18. A function $h$ satisfies:
 
-```text
+$$
 h(1) = 2
+$$
+
+$$
 h(2) = 5
+$$
+
+$$
 h(3) = 10
+$$
+
+$$
 h(4) = 17
-```
+$$
 
 Find a rule that matches the pattern.
 

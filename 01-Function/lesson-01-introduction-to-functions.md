@@ -16,29 +16,29 @@ A **function** is a rule that maps each input in a domain to **exactly one** out
 
 We often write:
 
-```text
-f: A -> B
-```
+$$
+f: A \to B
+$$
 
 This means:
 
-- `f` is the name of the function;
-- `A` is the **domain**, the set of allowed inputs;
-- `B` is the **codomain**, the set where outputs live.
+- $f$ is the name of the function;
+- $A$ is the **domain**, the set of allowed inputs;
+- $B$ is the **codomain**, the set where outputs live.
 
-If an element `x` in the domain is sent to an element `y` in the codomain, we write:
+If an element $x$ in the domain is sent to an element $y$ in the codomain, we write:
 
-```text
+$$
 f(x) = y
-```
+$$
 
 ### Mapping Idea
 
 Think of a function as a machine or arrow diagram:
 
-```text
-x -> f(x)
-```
+$$
+x \to f(x)
+$$
 
 For a relation to be a function:
 
@@ -49,29 +49,25 @@ For a relation to be a function:
 
 Let
 
-```text
-f: {1, 2, 3} -> {2, 4, 6}
-```
+$$
+f: \{1, 2, 3\} \to \{2, 4, 6\}
+$$
 
 defined by:
 
-```text
-1 -> 2
-2 -> 4
-3 -> 6
-```
+$$
+1 \to 2,\quad 2 \to 4,\quad 3 \to 6
+$$
 
 This is a function because each input has exactly one output.
 
 ### Not a Function Example
 
-```text
-1 -> 2
-1 -> 5
-2 -> 4
-```
+$$
+1 \to 2,\quad 1 \to 5,\quad 2 \to 4
+$$
 
-This is **not** a function because the input `1` maps to two outputs.
+This is **not** a function because the input $1$ maps to two outputs.
 
 ## 2. Function Examples Using Raw Mapping
 
@@ -79,26 +75,26 @@ Sometimes a function is given directly as a list of ordered pairs or arrows inst
 
 ### Example A: A Function
 
-```text
-{(0, 3), (1, 5), (2, 7), (3, 9)}
-```
+$$
+\{(0, 3), (1, 5), (2, 7), (3, 9)\}
+$$
 
 This is a function because each first coordinate appears only once.
 
 We can read:
 
-- `f(0) = 3`
-- `f(1) = 5`
-- `f(2) = 7`
-- `f(3) = 9`
+- $f(0) = 3$
+- $f(1) = 5$
+- $f(2) = 7$
+- $f(3) = 9$
 
 ### Example B: Not a Function
 
-```text
-{(1, 2), (1, 4), (2, 5)}
-```
+$$
+\{(1, 2), (1, 4), (2, 5)\}
+$$
 
-This is not a function because input `1` has two outputs.
+This is not a function because input $1$ has two outputs.
 
 ### Example C: Raw Mapping Table
 
@@ -110,29 +106,29 @@ This is not a function because input `1` has two outputs.
 | 1 | 1 |
 | 2 | 4 |
 
-This table describes the function `f(x) = x^2` for the listed inputs.
+This table describes the function $f(x) = x^2$ for the listed inputs.
 
 From the table:
 
-- `f(-2) = 4`
-- `f(0) = 0`
-- `f(2) = 4`
+- $f(-2) = 4$
+- $f(0) = 0$
+- $f(2) = 4$
 
 Different inputs may share the same output. That is allowed.
 
 ### Example D: Real-World Mapping
 
-Let `T` map a temperature in Celsius to Fahrenheit:
+Let $T$ map a temperature in Celsius to Fahrenheit:
 
-```text
-T(c) = (9/5)c + 32
-```
+$$
+T(c) = \frac{9}{5}c + 32
+$$
 
 Sample mappings:
 
-- `0 -> 32`
-- `10 -> 50`
-- `20 -> 68`
+- $0 \to 32$
+- $10 \to 50$
+- $20 \to 68$
 
 This is a function because every Celsius temperature gives exactly one Fahrenheit temperature.
 
@@ -140,73 +136,77 @@ This is a function because every Celsius temperature gives exactly one Fahrenhei
 
 Function composition means applying one function and then using its output as the input of another function.
 
-If we have functions `f` and `g`, then:
+If we have functions $f$ and $g$, then:
 
-```text
-(f o g)(x) = f(g(x))
-```
+$$
+(f \circ g)(x) = f(g(x))
+$$
 
 Read this as:
 
-```text
-f after g
-```
+$f$ after $g$.
 
 ### Example 1
 
 Let:
 
-```text
+$$
 f(x) = 2x + 1
+$$
+
+$$
 g(x) = x^2
-```
+$$
 
 Then:
 
-```text
-(f o g)(x) = f(g(x)) = f(x^2) = 2x^2 + 1
-```
+$$
+(f \circ g)(x) = f(g(x)) = f(x^2) = 2x^2 + 1
+$$
 
 But:
 
-```text
-(g o f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2
-```
+$$
+(g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2
+$$
 
 So in general:
 
-```text
-f o g != g o f
-```
+$$
+f \circ g \ne g \circ f
+$$
 
 ### Example 2: Using Raw Mappings
 
 Suppose:
 
-```text
-g: 1 -> 3, 2 -> 1, 3 -> 2
-f: 1 -> 5, 2 -> 7, 3 -> 9
-```
+$$
+g: 1 \to 3,\quad 2 \to 1,\quad 3 \to 2
+$$
 
-Find `(f o g)(2)`.
+$$
+f: 1 \to 5,\quad 2 \to 7,\quad 3 \to 9
+$$
+
+Find $(f \circ g)(2)$.
 
 Step 1:
 
-```text
+$$
 g(2) = 1
-```
+$$
 
 Step 2:
 
-```text
+$$
 f(1) = 5
-```
+$$
 
 Therefore:
 
-```text
-(f o g)(2) = 5
-```
+$$
+(f \circ g)(2) = 5
+$$
 
 ### Why Composition Matters
 
@@ -220,11 +220,11 @@ Composition models multi-step processes:
 
 An **inverse function** reverses the action of a function.
 
-If `f(a) = b`, then:
+If $f(a) = b$, then:
 
-```text
-f^(-1)(b) = a
-```
+$$
+f^{-1}(b) = a
+$$
 
 The inverse undoes the original function.
 
@@ -232,38 +232,44 @@ The inverse undoes the original function.
 
 Let:
 
-```text
+$$
 f(x) = 3x - 4
-```
+$$
 
 To find the inverse:
 
-1. Start with `y = 3x - 4`
-2. Swap `x` and `y`:
+1. Start with $y = 3x - 4$
+2. Swap $x$ and $y$:
 
-```text
+$$
 x = 3y - 4
-```
+$$
 
-3. Solve for `y`:
+3. Solve for $y$:
 
-```text
+$$
 x + 4 = 3y
-y = (x + 4) / 3
-```
+$$
+
+$$
+y = \frac{x + 4}{3}
+$$
 
 So:
 
-```text
-f^(-1)(x) = (x + 4) / 3
-```
+$$
+f^{-1}(x) = \frac{x + 4}{3}
+$$
 
 ### Quick Check
 
-```text
-f(f^(-1)(x)) = x
-f^(-1)(f(x)) = x
-```
+$$
+f(f^{-1}(x)) = x
+$$
+
+$$
+f^{-1}(f(x)) = x
+$$
 
 ### When Does an Inverse Exist?
 
@@ -273,28 +279,31 @@ That means different inputs must give different outputs.
 
 ### Example 2: No Inverse on All Real Numbers
 
-```text
+$$
 f(x) = x^2
-```
+$$
 
 This does not have an inverse on all real numbers because:
 
-```text
+$$
 f(2) = 4
+$$
+
+$$
 f(-2) = 4
-```
+$$
 
 Two inputs give the same output, so the function is not one-to-one.
 
-If we restrict the domain to `x >= 0`, then the inverse exists and is:
+If we restrict the domain to $x \ge 0$, then the inverse exists and is:
 
-```text
-f^(-1)(x) = sqrt(x)
-```
+$$
+f^{-1}(x) = \sqrt{x}
+$$
 
 ## 5. Function Graph
 
-A graph is the set of all points `(x, f(x))`.
+A graph is the set of all points $(x, f(x))$.
 
 The graph helps us visualize:
 
@@ -305,9 +314,9 @@ The graph helps us visualize:
 
 ### Example 1: Linear Function
 
-```text
+$$
 f(x) = 2x + 1
-```
+$$
 
 Some points are:
 
@@ -322,9 +331,9 @@ These points lie on a straight line.
 
 ### Example 2: Quadratic Function
 
-```text
+$$
 f(x) = x^2
-```
+$$
 
 Some points are:
 
@@ -354,8 +363,8 @@ To decide whether a function has an inverse, use the horizontal line test:
 
 For example:
 
-- `f(x) = 2x + 1` passes, so it has an inverse;
-- `f(x) = x^2` fails on all real numbers, so it does not have an inverse there.
+- $f(x) = 2x + 1$ passes, so it has an inverse;
+- $f(x) = x^2$ fails on all real numbers, so it does not have an inverse there.
 
 ## Summary
 
@@ -367,7 +376,7 @@ For example:
 
 ## Practice Check
 
-1. Is `{(2, 5), (3, 7), (2, 8)}` a function? Why or why not?
-2. If `f(x) = x + 4` and `g(x) = 2x`, find `(f o g)(x)`.
-3. Does `f(x) = x^3` have an inverse? Why?
+1. Is $\{(2, 5), (3, 7), (2, 8)\}$ a function? Why or why not?
+2. If $f(x) = x + 4$ and $g(x) = 2x$, find $(f \circ g)(x)$.
+3. Does $f(x) = x^3$ have an inverse? Why?
 4. What test can you use to tell whether a graph represents a function?
