@@ -273,6 +273,24 @@ $$
 
 ---
 
+# Another Domain Restriction
+
+Now keep the same function
+
+$$
+f(x)=x^2
+$$
+
+but restrict the domain to
+
+$$
+x \le 0
+$$
+
+What should the inverse be?
+
+---
+
 # Horizontal Line Test
 
 The horizontal line test helps decide whether a function is one-to-one.
