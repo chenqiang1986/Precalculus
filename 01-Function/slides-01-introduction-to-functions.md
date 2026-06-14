@@ -19,8 +19,7 @@ By the end of this lesson, you should be able to:
 
 - define a function using mapping language;
 - read a function from raw mappings;
-- compute a function composition;
-- find an inverse function when it exists;
+- read a function described by an expression;
 - connect a function rule to its graph.
 
 ---
@@ -35,7 +34,13 @@ $$
 
 - $A$ is the domain
 - $B$ is the codomain
+- the **range** $f(A)$ is the set of actual outputs produced by the function
 - $f(x)$ is the output for input $x$
+
+**Note:** The **range** and **codomain** are not always the same.
+
+- the **codomain** is the full target set declared in $f: A \to B$
+- the **range** is the part of the codomain the function actually reaches
 
 ---
 
@@ -57,7 +62,7 @@ A relation is a function only if:
 # Example of a Function
 
 $$
-f: \{1,2,3\} \to \{2,4,6\}
+f: \{1,2,3\} \to \{2,4,6,8\}
 $$
 
 defined by
@@ -66,7 +71,13 @@ $$
 1 \to 2,\quad 2 \to 4,\quad 3 \to 6
 $$
 
-Each input is matched with exactly one output.
+Analysis:
+
+- Domain: $\{1,2,3\}$
+- Codomain: $\{2,4,6,8\}$
+- Range: $\{2,4,6\}$
+
+Notice that $8$ is in the codomain, but it is not in the range.
 
 ---
 
@@ -80,70 +91,18 @@ This is **not** a function because input $1$ has two outputs.
 
 ---
 
-# Raw Mappings
-
-Functions are not always given by formulas.
-
-They may be written as:
-
-- ordered pairs;
-- arrow diagrams;
-- tables.
-
-Example:
-
-$$
-\{(0,3),(1,5),(2,7),(3,9)\}
-$$
-
----
-
-# Reading Ordered Pairs
-
-From
-
-$$
-\{(0,3),(1,5),(2,7),(3,9)\}
-$$
-
-we read:
-
-- $f(0)=3$
-- $f(1)=5$
-- $f(2)=7$
-- $f(3)=9$
-
----
-
-# Is This a Function?
-
-$$
-\{(1,2),(1,4),(2,5)\}
-$$
-
-No.
-
-Why?
-
-Because the input $1$ appears with two different outputs.
-
----
-
 # Function Table Example
 
-| $x$ | $f(x)$ |
-|---|---|
-| $-2$ | $4$ |
-| $-1$ | $1$ |
-| $0$ | $0$ |
-| $1$ | $1$ |
-| $2$ | $4$ |
+| $x$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
+|---|---|---|---|---|---|
+| $f(x)$ | $4$ | $1$ | $0$ | $1$ | $4$ |
 
-This matches
 
-$$
-f(x)=x^2
-$$
+Analysis:
+
+- Domain: $\{-2,-1,0,1,2\}$
+- Codomain: if we use the outputs shown in the table, $\{0,1,4\}$
+- Range: $\{0,1,4\}$
 
 ---
 
@@ -163,201 +122,264 @@ The only forbidden case is one input giving multiple outputs.
 
 ---
 
-# Function Composition
+# Practice: Find Domain, Codomain, Range
 
-Composition means applying one function after another.
-
-$$
-(f \circ g)(x)=f(g(x))
-$$
-
-Read this as:
+For the function
 
 $$
-\text{$f$ after $g$}
+f: \{0,1,2,3\} \to \{1,3,5,7,9\}
 $$
+
+defined by
+
+$$
+0 \to 1,\quad 1 \to 3,\quad 2 \to 5,\quad 3 \to 7
+$$
+
+identify:
+
+- the domain;
+- the codomain;
+- the range.
 
 ---
 
-# Composition Example
+# Another Practice Example
 
-Let
+Use the table to identify the domain, codomain, and range.
 
-$$
-f(x)=2x+1,\qquad g(x)=x^2
-$$
+| $x$ | $-2$ | $0$ | $1$ | $4$ |
+|---|---|---|---|---|
+| $g(x)$ | $3$ | $1$ | $3$ | $5$ |
 
-Then
+Also decide:
 
-$$
-(f \circ g)(x)=f(x^2)=2x^2+1
-$$
-
----
-
-# Order Matters
-
-Using the same functions:
-
-$$
-(g \circ f)(x)=g(2x+1)=(2x+1)^2
-$$
-
-So in general:
-
-$$
-f \circ g \ne g \circ f
-$$
+- whether this relation is a function;
+- whether the codomain and range are the same.
 
 ---
 
-# Composition with Raw Mappings
+# Functions Described by Expressions
 
-Suppose
-
-$$
-g: 1 \to 3,\quad 2 \to 1,\quad 3 \to 2
-$$
-
-$$
-f: 1 \to 5,\quad 2 \to 7,\quad 3 \to 9
-$$
-
-Find $(f \circ g)(2)$.
-
----
-
-# Solving the Composition
-
-First:
-
-$$
-g(2)=1
-$$
-
-Then:
-
-$$
-f(1)=5
-$$
-
-Therefore:
-
-$$
-(f \circ g)(2)=5
-$$
-
----
-
-# Inverse Function
-
-An **inverse function** undoes the original function.
-
-If
-
-$$
-f(a)=b
-$$
-
-then
-
-$$
-f^{-1}(b)=a
-$$
-
----
-
-# Finding an Inverse
-
-Let
-
-$$
-f(x)=3x-4
-$$
-
-Start with
-
-$$
-y=3x-4
-$$
-
-Swap $x$ and $y$, then solve for $y$.
-
----
-
-# Inverse Example Continued
-
-Swap:
-
-$$
-x=3y-4
-$$
-
-Solve:
-
-$$
-x+4=3y
-$$
-
-$$
-y=\frac{x+4}{3}
-$$
-
-So
-
-$$
-f^{-1}(x)=\frac{x+4}{3}
-$$
-
----
-
-# Checking an Inverse
-
-An inverse should satisfy:
-
-$$
-f\left(f^{-1}(x)\right)=x
-$$
-
-and
-
-$$
-f^{-1}(f(x))=x
-$$
-
----
-
-# When Does an Inverse Exist?
-
-A function has an inverse only if it is **one-to-one**.
-
-That means different inputs must produce different outputs.
+Sometimes a function is given by a formula instead of a table or mapping.
 
 Example:
 
 $$
-f(x)=x^2
+f(x)=2x+3
 $$
 
-is not one-to-one on all real numbers.
+This means:
+
+- start with an input $x$;
+- multiply by $2$;
+- add $3$ to get the output.
 
 ---
 
-# Why $x^2$ Fails
+# Reading a Function Rule
+
+If
 
 $$
-f(2)=4,\qquad f(-2)=4
+f(x)=x^2-1
 $$
 
-Two different inputs give the same output.
+then:
 
-So $f(x)=x^2$ does **not** have an inverse on all real numbers.
+- $f(0)=-1$
+- $f(2)=3$
+- $f(-3)=8$
 
-If we restrict the domain to $x \ge 0$, then
+The expression tells us how each input is matched with exactly one output.
+
+---
+
+# Expression Example to Analyze
+
+Consider
 
 $$
-f^{-1}(x)=\sqrt{x}
+f: \mathbb{R} \to \mathbb{R}
 $$
+
+given by
+
+$$
+f(x)=x^2+1
+$$
+
+Identify:
+
+- the domain;
+- the codomain;
+- the range.
+
+---
+
+# Another Expression Example
+
+Consider
+
+$$
+g: \mathbb{R} \to \mathbb{R}
+$$
+
+given by
+
+$$
+g(x)=2x
+$$
+
+Decide:
+
+- the domain;
+- the codomain;
+- the range;
+- whether the codomain and range are the same.
+
+---
+
+# Same Rule, Different Domain
+
+Now consider the same rule
+
+$$
+g(x)=2x
+$$
+
+but with
+
+$$
+g:[1,2]\to\mathbb{R}
+$$
+
+Identify:
+
+- the domain;
+- the codomain;
+- the range.
+
+How does changing the domain change the range?
+
+---
+
+# Default Domain Convention
+
+If a domain is **not** stated explicitly, we usually assume the domain is
+
+$$
+\text{all real numbers for which the expression is well-defined.}
+$$
+
+That means:
+
+- denominators cannot be zero;
+- expressions inside square roots must be nonnegative.
+
+---
+
+# Domain Practice: Fraction Example
+
+Find the domain and range of
+
+$$
+f(x)=\frac{3}{x-2}
+$$
+
+Ask:
+
+- which value makes the denominator zero?
+- which real numbers are allowed?
+- which output values can never occur?
+
+---
+
+# Domain Practice: Square Root Example
+
+Find the domain and range of
+
+$$
+g(x)=\sqrt{2x+5}
+$$
+
+Ask:
+
+- when is the expression under the square root nonnegative?
+- which real numbers satisfy that condition?
+- what values can a square root output?
+
+---
+
+# Mixed Domain Practice
+
+Find the domain and range of
+
+$$
+h(x)=\frac{\sqrt{x-1}}{x-3}
+$$
+
+Ask:
+
+- what conditions must both parts satisfy at the same time?
+- what output values seem possible?
+
+---
+
+# Piecewise Functions
+
+A **piecewise function** uses different rules on different parts of its domain.
+
+Example:
+
+$$
+f(x)=
+\begin{cases}
+x+1, & x<0 \\
+x^2, & x\ge 0
+\end{cases}
+$$
+
+To evaluate a piecewise function, first decide which condition the input satisfies.
+
+---
+
+# Piecewise Example to Analyze
+
+Find the domain and range of
+
+$$
+f(x)=
+\begin{cases}
+2x+1, & x<1 \\
+3, & x\ge 1
+\end{cases}
+$$
+
+Ask:
+
+- what values of $x$ are covered by the pieces?
+- what outputs come from each piece?
+
+---
+
+# Another Piecewise Example
+
+Find the domain and range of
+
+$$
+g(x)=
+\begin{cases}
+\sqrt{x+2}, & -2\le x<2 \\
+x-1, & x\ge 2
+\end{cases}
+$$
+
+Ask:
+
+- what is the domain of each piece?
+- what is the combined domain?
+- what outputs come from each piece?
 
 ---
 
@@ -374,46 +396,53 @@ Graphs help us see:
 - shape;
 - intercepts;
 - increase or decrease;
-- whether an inverse may exist.
+- how outputs change as inputs change.
 
 ---
 
-# Linear Graph Example
+# Desmos Graph Practice
+
+Use Desmos to visualize each function graph.
+
+For each example, notice:
+
+- the overall shape;
+- where the graph crosses the axes;
+- how the output changes as the input changes.
+
+---
+
+# Graph Example 1
 
 $$
 f(x)=2x+1
 $$
 
-Sample points:
-
-| $x$ | $f(x)$ |
-|---|---|
-| $-1$ | $-1$ |
-| $0$ | $1$ |
-| $1$ | $3$ |
-| $2$ | $5$ |
-
-These points form a line.
+What do you notice about its graph?
 
 ---
 
-# Quadratic Graph Example
+# Graph Example 2
 
 $$
-f(x)=x^2
+g(x)=x^2
 $$
 
-Sample points:
+What do you notice about its graph?
 
-| $x$ | $f(x)$ |
-|---|---|
-| $-2$ | $4$ |
-| $-1$ | $1$ |
-| $0$ | $0$ |
-| $1$ | $1$ |
-| $2$ | $4$ |
+---
 
-These points form a parabola.
+# Graph Example 3
+
+$$
+h(x)=
+\begin{cases}
+x+2, & x<0 \\
+x^2, & x\ge 0
+\end{cases}
+$$
+
+What do you notice about this piecewise graph?
 
 ---
 
@@ -426,44 +455,12 @@ A graph represents a function if every vertical line intersects it at most once.
 
 ---
 
-# Horizontal Line Test
-
-To decide whether a function has an inverse:
-
-- passes the horizontal line test $\Rightarrow$ one-to-one
-- fails the horizontal line test $\Rightarrow$ no inverse on that domain
-
-Example:
-
-- $f(x)=2x+1$ passes
-- $f(x)=x^2$ fails on all real numbers
-
----
-
 # Summary
 
 - A function maps each input to exactly one output.
-- Raw mappings and tables can describe functions.
-- Composition means applying functions in sequence.
-- An inverse undoes a function.
+- Function construction method:
+    - Defining Table
+    - Expression
+    - Piecewise Expression
+    - Other
 - Graphs help us understand function behavior.
-
----
-
-# Quick Practice
-
-1. Is $\{(2,5),(3,7),(2,8)\}$ a function?
-2. If $f(x)=x+4$ and $g(x)=2x$, find $(f \circ g)(x)$.
-3. Does $f(x)=x^3$ have an inverse?
-4. What test tells whether a graph is a function?
-
----
-
-# Exit Ticket
-
-Write 2 to 3 sentences answering:
-
-- What makes a relation a function?
-- Why does order matter in composition?
-- When can a function have an inverse?
-
