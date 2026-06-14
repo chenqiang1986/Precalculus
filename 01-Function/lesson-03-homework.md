@@ -18,7 +18,7 @@ Show your work clearly. Use interval notation whenever possible.
 - $f(x)=7x-5$
 - $g(x)=12-4x$
 - $h(x)=3$
-- $p(x)=x^2+1$
+- $p(x)=x^2+2x+1$
 
 4. The table below gives values of a function $f$.
 
@@ -45,7 +45,7 @@ Find:
 6. Consider
 
 $$
-g(x)=-(x-4)^2+1
+g(x)=-x^2+8x-8
 $$
 
 Find:
@@ -57,7 +57,7 @@ Find:
 7. Consider
 
 $$
-h(x)=\cos x
+h(x)=5\cos x
 $$
 
 On the interval $[-\pi,\pi]$, identify:
@@ -69,7 +69,7 @@ On the interval $[-\pi,\pi]$, identify:
 8. Consider
 
 $$
-p(x)=\sin x
+p(x)=-3\sin x
 $$
 
 On the interval $[0,2\pi]$, identify:
@@ -157,12 +157,12 @@ is symmetric about the origin.
 
 17. For each function below, answer both questions.
 
-1. Is the function increasing, decreasing, constant, or mixed on the stated interval?
-2. Is the function even, odd, or neither?
+    1. Is the function increasing, decreasing, constant, or mixed on the stated interval?
+    2. Is the function even, odd, or neither?
 
 Functions:
 
-- $x^2$ on all real numbers
+- $x^2-3x$ on all real numbers
 - $-x$ on all real numbers
 - $\cos x$ on $[0,\pi]$
 - $\sin x$ on $[-\pi,\pi]$
@@ -180,7 +180,7 @@ Then decide whether it is even, odd, or neither.
 19. Consider
 
 $$
-g(x)=(x+1)^2-4
+g(x)=x^2+2x-3
 $$
 
 State whether the function is increasing, decreasing, or mixed on all real numbers.
