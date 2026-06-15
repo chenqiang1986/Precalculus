@@ -3,11 +3,11 @@ marp: true
 theme: default
 paginate: true
 math: mathjax
-title: "Lesson 3: Increasing, Decreasing, Even, and Odd Functions"
+title: "Lesson 3: Function Monotonicity, Symmetry"
 ---
 
 # Lesson 3
-## Increasing, Decreasing, Even, and Odd Functions
+## Function Monotonicity, Symmetry
 
 Precalculus
 

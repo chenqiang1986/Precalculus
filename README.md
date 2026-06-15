@@ -2,7 +2,7 @@
 
 ## Main Topics
 
-1. Function Basics - 3 Classes
+1. Function Basics - 4 Classes
 2. Polynomials - 3 Classes
 3. Rational Functions - 3 Classes
 4. Function Transformation - 1 Class
