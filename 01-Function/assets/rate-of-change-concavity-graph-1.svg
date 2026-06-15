@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Graph for increasing decreasing and concavity practice</title>
+  <desc id="desc">A smooth cubic-like graph with a local maximum near x equals negative 1, a local minimum near x equals 1, concave down to the left of the y-axis and concave up to the right.</desc>
+  <rect width="960" height="540" fill="#ffffff"/>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="180" y1="90" x2="180" y2="450"/>
+    <line x1="330" y1="90" x2="330" y2="450"/>
+    <line x1="480" y1="90" x2="480" y2="450"/>
+    <line x1="630" y1="90" x2="630" y2="450"/>
+    <line x1="780" y1="90" x2="780" y2="450"/>
+    <line x1="120" y1="90" x2="840" y2="90"/>
+    <line x1="120" y1="150" x2="840" y2="150"/>
+    <line x1="120" y1="210" x2="840" y2="210"/>
+    <line x1="120" y1="270" x2="840" y2="270"/>
+    <line x1="120" y1="330" x2="840" y2="330"/>
+    <line x1="120" y1="390" x2="840" y2="390"/>
+    <line x1="120" y1="450" x2="840" y2="450"/>
+  </g>
+  <g stroke="#111827" stroke-width="2.5" fill="none">
+    <line x1="120" y1="270" x2="850" y2="270"/>
+    <line x1="480" y1="460" x2="480" y2="80"/>
+  </g>
+  <g fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="20">
+    <text x="860" y="277">x</text>
+    <text x="488" y="76">y</text>
+    <text x="170" y="295">-2</text>
+    <text x="320" y="295">-1</text>
+    <text x="475" y="295">0</text>
+    <text x="625" y="295">1</text>
+    <text x="775" y="295">2</text>
+    <text x="448" y="456">-3</text>
+    <text x="448" y="396">-2</text>
+    <text x="448" y="336">-1</text>
+    <text x="448" y="216">1</text>
+    <text x="448" y="156">2</text>
+    <text x="448" y="96">3</text>
+  </g>
+  <polyline
+    points="165,448 210,296 255,203 300,158 345,152 390,175 435,218 480,270 525,322 570,365 615,388 660,382 705,338 750,244 795,92"
+    fill="none"
+    stroke="#0f766e"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+  <g fill="#0f766e">
+    <circle cx="330" cy="150" r="6"/>
+    <circle cx="630" cy="390" r="6"/>
+  </g>
+  <g fill="#111827">
+    <circle cx="210" cy="296" r="5"/>
+    <circle cx="330" cy="150" r="5"/>
+    <circle cx="480" cy="270" r="5"/>
+    <circle cx="630" cy="390" r="5"/>
+    <circle cx="750" cy="244" r="5"/>
+  </g>
+  <g fill="#111827" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">
+    <text x="190" y="286">A</text>
+    <text x="340" y="140">B</text>
+    <text x="492" y="262">C</text>
+    <text x="642" y="410">D</text>
+    <text x="762" y="236">E</text>
+  </g>
+</svg>
