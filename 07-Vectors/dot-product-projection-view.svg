@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+  <defs>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .label {
+        font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-size: 25px;
+        fill: #0f172a;
+      }
+      .small {
+        font-size: 20px;
+        fill: #334155;
+      }
+      .math {
+        font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-size: 28px;
+        fill: #0f172a;
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="560" fill="#ffffff"/>
+
+  <text x="70" y="70" class="math">Projection of b onto a</text>
+
+  <line x1="120" y1="390" x2="850" y2="390" stroke="#334155" stroke-width="6" marker-end="url(#arrow-slate)"/>
+  <text x="862" y="398" class="label">a</text>
+
+  <line x1="120" y1="390" x2="560" y2="180" stroke="#2563eb" stroke-width="6" marker-end="url(#arrow-blue)"/>
+  <text x="360" y="245" class="label">b</text>
+
+  <line x1="560" y1="180" x2="560" y2="390" stroke="#94a3b8" stroke-width="3" stroke-dasharray="10 10"/>
+
+  <line x1="120" y1="435" x2="560" y2="435" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
+  <line x1="120" y1="423" x2="120" y2="447" stroke="#2563eb" stroke-width="4"/>
+  <line x1="560" y1="423" x2="560" y2="447" stroke="#2563eb" stroke-width="4"/>
+  <text x="244" y="474" class="label">proj_a(b) = |b| cos θ</text>
+
+  <path d="M 240 390 A 120 120 0 0 0 230 338" fill="none" stroke="#64748b" stroke-width="3"/>
+  <text x="250" y="340" class="label">θ</text>
+
+  <circle cx="120" cy="390" r="5" fill="#0f172a"/>
+  <circle cx="560" cy="390" r="5" fill="#0f172a"/>
+  <text x="106" y="418" class="small">O</text>
+  <text x="548" y="418" class="small">P</text>
+
+  <text x="650" y="185" class="small">Drop a perpendicular from the head of b</text>
+  <text x="650" y="212" class="small">to the line in the direction of a.</text>
+  <text x="650" y="275" class="small">Then the signed length OP is the projection of b onto a.</text>
+  <text x="650" y="338" class="math">a · b = |a| proj_a(b)</text>
+</svg>

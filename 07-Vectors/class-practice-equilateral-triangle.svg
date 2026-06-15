@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="560" viewBox="0 0 620 560">
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ea580c"/>
+    </marker>
+    <style>
+      .label {
+        font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-size: 26px;
+        fill: #0f172a;
+      }
+      .small {
+        font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+        font-size: 22px;
+        fill: #334155;
+      }
+    </style>
+  </defs>
+
+  <rect width="620" height="560" fill="#ffffff"/>
+
+  <line x1="180" y1="420" x2="540" y2="420" stroke="#cbd5e1" stroke-width="5"/>
+  <line x1="180" y1="420" x2="360" y2="108" stroke="#cbd5e1" stroke-width="5"/>
+  <line x1="360" y1="108" x2="540" y2="420" stroke="#cbd5e1" stroke-width="5"/>
+
+  <line x1="180" y1="420" x2="540" y2="420" stroke="#2563eb" stroke-width="7" marker-end="url(#arrow-blue)"/>
+
+  <line x1="180" y1="420" x2="360" y2="108" stroke="#ea580c" stroke-width="7" marker-end="url(#arrow-orange)"/>
+
+  <circle cx="180" cy="420" r="6" fill="#0f172a"/>
+  <circle cx="540" cy="420" r="6" fill="#0f172a"/>
+  <circle cx="360" cy="108" r="6" fill="#0f172a"/>
+
+  <text x="160" y="452" class="label">A</text>
+  <text x="545" y="452" class="label">B</text>
+  <text x="355" y="92" class="label">C</text>
+
+  <path d="M 250 420 A 70 70 0 0 0 215 359" fill="none" stroke="#64748b" stroke-width="3"/>
+  <text x="245" y="358" class="label">60°</text>
+</svg>
