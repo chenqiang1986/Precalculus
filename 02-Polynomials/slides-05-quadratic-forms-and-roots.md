@@ -323,6 +323,20 @@ Write each quadratic in factorized form.
 
 ---
 
+# Summary
+
+$$
+\text{roots } r_1,\ r_2
+\xrightarrow{\text{simple form}}
+a(x-r_1)(x-r_2)
+\xrightarrow{\text{polynomial multiplication}}
+ax^2+bx+c
+\xrightarrow{\text{quadratic formula}}
+\text{roots } r_1,\ r_2
+$$
+
+---
+
 # Exit Ticket
 
 1. The roots are $6$ and $-2$. Write the factorized form.
