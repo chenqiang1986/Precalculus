@@ -151,6 +151,30 @@ $$
 
 # Finding an Inverse
 
+Suppose a function is given by a table:
+
+| $x$ | $-1$ | $0$ | $2$ |
+| --- | --- | --- | --- |
+| $f(x)$ | $3$ | $5$ | $9$ |
+
+To find the inverse, reverse each input-output pair.
+
+---
+
+# Inverse Table Example
+
+The inverse table is:
+
+| $x$ | $3$ | $5$ | $9$ |
+| --- | --- | --- | --- |
+| $f^{-1}(x)$ | $-1$ | $0$ | $2$ |
+
+For example, since $f(2)=9$, we have $f^{-1}(9)=2$.
+
+---
+
+# Finding an Inverse from an Expression
+
 Let
 
 $$
@@ -163,32 +187,31 @@ $$
 y=3x-4
 $$
 
-Swap $x$ and $y$, then solve for $y$.
+Solve for $x$ in terms of $y$.
 
 ---
 
 # Inverse Example Continued
 
-Swap:
 
 $$
-x=3y-4
+y=3x-4
 $$
 
 Solve:
 
 $$
-x+4=3y
+y+4=3x
 $$
 
 $$
-y=\frac{x+4}{3}
+x=\frac{y+4}{3}
 $$
 
 So
 
 $$
-f^{-1}(x)=\frac{x+4}{3}
+f^{-1}(y)=\frac{y+4}{3}
 $$
 
 ---
@@ -232,6 +255,22 @@ A function has an inverse only if it is **one-to-one**.
 That means different inputs must produce different outputs.
 
 If two different inputs give the same output, the inverse would not know which input to return.
+
+---
+
+# Table Example That Fails
+
+Suppose
+
+| $x$ | $1$ | $2$ | $3$ |
+| --- | --- | --- | --- |
+| $f(x)$ | $4$ | $4$ | $6$ |
+
+Here, $f(1)=4$ and $f(2)=4$.
+
+If we reverse the pairs, then $4$ would have to map to both $1$ and $2$.
+
+So the inverse is not a function.
 
 ---
 
